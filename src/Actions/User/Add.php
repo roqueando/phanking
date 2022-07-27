@@ -17,7 +17,6 @@ final class Add
     {
         $user = new User(name: $this->name, currency: $this->initialCurrency);
 
-        // will store that user in our Bank state
         Bank::getInstance()->createUser($user);
         return $user;
     }

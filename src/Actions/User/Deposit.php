@@ -22,7 +22,6 @@ final class Deposit
         $balance = $user->getBalance($this->currency);
         $currency = $user->setCurrency(type: $this->currency, amount: $balance->amount + $this->amount);
 
-        // will store that user in our Bank state
         Bank::getInstance()->updateUser(userName: $this->user, resource: $user);
         return $currency;
     }

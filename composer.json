@@ -26,7 +26,7 @@
     },
      "extra": {
         "ramsey/composer-repl": {
-            "includes": [ "src/index.php" ]
+            "includes": [ "bootstrap.php" ]
         }
     }
 }
