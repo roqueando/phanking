@@ -1,0 +1,32 @@
+{
+    "name": "ayaworan/phanking",
+    "description": "A copy from ex_banking test",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phanking\\": "src/",
+            "Test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vitor Roque",
+            "email": "vitor.roquep@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "ramsey/composer-repl": "^1.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "ramsey/composer-repl": true
+        }
+    },
+     "extra": {
+        "ramsey/composer-repl": {
+            "includes": [ "src/index.php" ]
+        }
+    }
+}
